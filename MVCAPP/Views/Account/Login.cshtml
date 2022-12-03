@@ -1,0 +1,85 @@
+﻿@model LoginViewModel
+@{
+    var returnUrl = Context.Request.Query["ReturnUrl"];
+    ViewData["Title"] = "Login";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h1 class="titleSize">Local Account Login</h1>
+        <hr />
+        <form asp-controller="Account" asp-action="Login" asp-route-returnUrl="@returnUrl" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group mb-2">
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-2">
+                <label asp-for="Password" class="form-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-2">
+                <div class="checkbox">
+                    <label asp-for="RememberMe" class="form-label">
+                        <input asp-for="RememberMe" />
+                        @Html.DisplayNameFor(n=>n.RememberMe)
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mb-1">Login</button>
+        </form>
+        <a asp-action="ForgetPassword">Forget Password?</a>
+
+    </div>
+
+    <div class="col-md-6">
+        <h1 class="titleSize">External Login</h1>
+        <hr class="mb-5" />
+        @if (Model.ExternalLogins.Count != 0)
+        {
+            <form asp-action="ExternalLogin" asp-route-ReturnUrl="@Model.ReturnUrl" method="post">
+                <div>
+                    @foreach (var provider in Model.ExternalLogins)
+                    {
+                        @if (provider.Name == "Facebook")
+                        {
+                            <button class="btn btn-primary form-control mb-3" type="submit" name="provider"
+                                    value="@provider.Name" title="Login using your @provider.DisplayName account">
+                                <i class="fa-brands fa-facebook"></i>  Continue with @provider.DisplayName
+                            </button>
+                        }
+                        else if (provider.Name == "Google")
+                        {
+                            <button class="btn btn-light form-control mb-3" type="submit" name="provider"
+                                    value="@provider.Name" title="Login using your @provider.DisplayName account">
+                                <i class="fa-brands fa-google"></i>  Continue with @provider.DisplayName
+                            </button>
+                        }
+                        else
+                        {
+                            <button class="btn btn-primary form-control mb-3" type="submit" name="provider"
+                                    value="@provider.Name" title="Login using your @provider.DisplayName account">
+                                Continue with @provider.DisplayName
+                            </button>
+                        }
+                    }
+                </div>
+             </form> 
+        }
+        else
+        {
+            <div>There is no external logins configure</div>
+        }
+        
+
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script src="~/lib/fontawesome-iconpicker/js/fontawesome-iconpicker.js"></script>
+    <script src="~/lib/fontawesome-iconpicker/js/fontawesome-iconpicker.min.js"></script>
+}  

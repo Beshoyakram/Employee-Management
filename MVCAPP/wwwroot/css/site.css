@@ -1,0 +1,79 @@
+html {font-size: 14px;}
+
+@media (min-width: 768px) {
+  html {font-size: 16px;}
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.display-4 {margin-bottom: 50px;font-size: 40px;}
+.titleSize {
+    font-size: 40px;
+    font-weight: 300;
+}
+body {
+  margin-bottom: 60px;
+}
+/*Navbar*/
+.navbar li a {font-size: 17px;}
+.navbar a i {color: #ccc}
+
+/*Cards in index_file*/
+.AllUsers .card {display: inline-block;}
+.AllUsers .card-img-top {
+    height: 150px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+}
+.card .btn {
+    line-height: 1.0;
+    font-size: 0.9rem;
+    padding: 6px;
+}
+.card-header h3 {text-align: center;font-size: 1.5rem;}
+
+
+/*Cards in Details_file*/
+.details .card,.details .card img {
+    width: 60%;
+    margin: auto;
+}
+.details .card-body {
+    text-align: center;
+    border: 1px solid #eee
+}
+
+
+.Update .form-control {
+    display: inline-block;
+    width: 83.3%;
+}
+.Update img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ddd;
+}
+.Update label {
+    display: block;
+}
+
+
+.form-check {
+    padding: 0;
+}
+
+
+
+
+
+
+
+/*Fontawsome in login page*/
+.fa-google {
+    color: #f15151;
+}
+button:has(.fa-google) {
+    border: 1px solid #ccc;
+}

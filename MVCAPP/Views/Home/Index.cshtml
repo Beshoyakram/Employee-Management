@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Employee>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    
+    <div class="AllUsers">
+        @foreach (var item in Model)
+        {
+            var imgPath = "~/Imgs/" + (item.PhotoPath ?? "No_image.png");
+            <div class="card m-2" style="width: 15rem">
+                <div class="card-header">
+                    <h3>@item.Name</h3>
+                </div>
+                <img asp-append-version="true" src="@imgPath" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Id</h5>
+                    <p class="card-text">@item.Email</p>
+                    <a asp-controller="Home" asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">View</a>
+                    <a asp-controller="Home" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
+                    <a asp-controller="Home" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                </div>
+            </div>
+           
+        }
+        
+
+    </div>
+
+
+</div>
