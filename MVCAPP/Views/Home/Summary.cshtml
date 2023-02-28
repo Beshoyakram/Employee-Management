@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Summary";
+    Dictionary<string,int> Data = ViewBag.Summary;
+    int CountAll = 0;
+}
+
+<div class="text-center">
+    <h3 class="display-4 mb-5 mt-5">Employee Head Count Summary</h3>
+    
+    <table class="table table-bordered ">
+        <thead class="RowStyle">
+            <tr>
+                <th scope="col">Department</th>
+                <th scope="col">Head Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Data)
+            {
+                CountAll += item.Value;
+
+                <tr>
+                    <td>@item.Key</td>
+                    <td>@item.Value</td>
+                </tr>
+            }
+           
+        </tbody>
+        <tfoot class="RowStyle">
+            <tr>
+                <td> Count</td>
+                <td>@CountAll</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+
+</div>

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Microsoft.IdentityModel.Tokens;
+using System.Collections;
 using System.Security.Cryptography.X509Certificates;
 
 namespace MVCAPP.Models
@@ -11,7 +12,7 @@ namespace MVCAPP.Models
         {
             _employees = new List<Employee>() 
             {
-                new Employee(){ Id=1,Name="Beshoy",Email="Beshoy@gmail.com",Department=Dept.None},
+                new Employee(){ Id=1,Name="Beshoy",Email="Beshoy@gmail.com",Department=Dept.IT},
                 new Employee(){ Id=2,Name="Mona",Email="Mona@gmail.com",Department=Dept.HR},
                 new Employee(){ Id=3,Name="Sayed",Email="Sayed@gmail.com",Department=Dept.IT},
             };
@@ -66,6 +67,28 @@ namespace MVCAPP.Models
 
             }
             else { throw new NotImplementedException(); }
+        }
+
+        public IEnumerable<Employee> Search(string SearchTerm)
+        {
+            if (string.IsNullOrEmpty(SearchTerm))
+            {
+                return _employees;
+            }
+            else 
+            {
+                return _employees.Where(e => e.Name.Contains(SearchTerm) || e.Email.Contains(SearchTerm));
+            }
+        }
+
+        public int CountDept(Dept dept)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool FindEmployee(string email)
+        {
+            throw new NotImplementedException();
         }
     }
 }

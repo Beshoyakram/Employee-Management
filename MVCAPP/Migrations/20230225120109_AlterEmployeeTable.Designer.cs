@@ -4,6 +4,7 @@ using MVCAPP.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVCAPP.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230225120109_AlterEmployeeTable")]
+    partial class AlterEmployeeTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -89,25 +92,6 @@ namespace MVCAPP.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "02174cf0–9412–4cfe-afbf-59f706d72cf6",
-                            AccessFailedCount = 0,
-                            City = "Cairo",
-                            ConcurrencyStamp = "b2be6680-e73f-4095-8b13-f82483c2d379",
-                            Email = "admin@gmail.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = true,
-                            NormalizedEmail = "ADMIN@GMAIL.COM",
-                            NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEDfP05cDHzXDcxZgUJa9Iio+W2GhHl8WRa5h2zf85G8bv6XvXJORC9APuOgg7xSn/A==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "93f8d2a3-0392-4395-bee1-5a50cea9427c",
-                            TwoFactorEnabled = false,
-                            UserName = "admin@gmail.com"
-                        });
                 });
 
             modelBuilder.Entity("MVCAPP.Models.Employee", b =>
@@ -266,15 +250,6 @@ namespace MVCAPP.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "341743f0-asd2–42de-afbf-59kmkkmk72cf6",
-                            ConcurrencyStamp = "341743f0-asd2–42de-afbf-59kmkkmk72cf6",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -325,29 +300,6 @@ namespace MVCAPP.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("AspNetUserClaims", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            ClaimType = "Create Role",
-                            ClaimValue = "true",
-                            UserId = "02174cf0–9412–4cfe-afbf-59f706d72cf6"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            ClaimType = "Edit Role",
-                            ClaimValue = "true",
-                            UserId = "02174cf0–9412–4cfe-afbf-59f706d72cf6"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            ClaimType = "Delete Role",
-                            ClaimValue = "true",
-                            UserId = "02174cf0–9412–4cfe-afbf-59f706d72cf6"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
@@ -385,13 +337,6 @@ namespace MVCAPP.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = "02174cf0–9412–4cfe-afbf-59f706d72cf6",
-                            RoleId = "341743f0-asd2–42de-afbf-59kmkkmk72cf6"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>

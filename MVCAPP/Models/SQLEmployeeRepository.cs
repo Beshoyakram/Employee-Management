@@ -1,4 +1,6 @@
-﻿namespace MVCAPP.Models
+﻿using System.Linq;
+
+namespace MVCAPP.Models
 {
     public class SQLEmployeeRepository : IEmployeeRepository
     {
@@ -20,6 +22,12 @@
             return context.employees;
         }
 
+        public int CountDept(Dept dept)
+        {
+            var count = context.employees.Where(e=>e.Department == dept).Count();
+            return count;
+        }
+
         public Employee Delete(int id)
         {
             var emp = context.employees.Find(id);
@@ -33,11 +41,34 @@
             
         }
 
+        public bool FindEmployee(string email)
+        {
+            Employee emp = context.employees.Where(e => e.Email == email).FirstOrDefault();
+            if (emp != null) { return true; }
+            else { return false; }
+        }
+
         public Employee GetEmployee(int id)
         {
             var emp = context.employees.Find(id);
             if (emp != null) { return emp; }
             else {return null; }
+        }
+
+        public IEnumerable<Employee> Search(string SearchTerm)
+        {
+            if (string.IsNullOrEmpty(SearchTerm))
+            {
+                return context.employees;
+            }
+            else
+            {
+                return context.employees.Where(e => e.Name
+                .Contains(SearchTerm) ||
+                e.Email.Contains(SearchTerm) ||
+                e.Phone.ToString().Contains(SearchTerm)); 
+                
+            }
         }
 
         public Employee Update(Employee e)

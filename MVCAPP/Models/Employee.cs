@@ -5,16 +5,17 @@ namespace MVCAPP.Models
     public class Employee
     {
         public int Id { get; set; }
-        [Required,MaxLength(30,ErrorMessage ="Name can't be excced 30 characters.")]
-        [MinLength(2,ErrorMessage ="minnnnn 2")]
+        [MinLength(4, ErrorMessage = "Minimum legth must be 4 characters")]
         public string Name { get; set; }
-        [Required]
-        [Display(Name ="Office Email")]
-        [RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
-                            , ErrorMessage = "Invaild Email")]
+     
+        [RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*", ErrorMessage = "Invaild Email")]
         public string Email  { get; set; }
-        [Required]
         public Dept? Department { get; set; }
         public string? PhotoPath { get; set; }
+        public int Phone { get; set; }
+        public double Salary { get; set; }
+        public string Address { get; set; }
+
+
     }
 }

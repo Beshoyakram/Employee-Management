@@ -280,7 +280,6 @@ namespace MVCAPP.Controllers
                 {
                     return RedirectToAction("Login");
                 }
-
                 var result = await _userManager.ChangePasswordAsync(user,model.OldPassword, model.NewPassword);
                 if (!result.Succeeded)
                 {

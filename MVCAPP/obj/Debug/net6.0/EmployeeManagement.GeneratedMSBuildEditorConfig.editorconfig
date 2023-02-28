@@ -8,137 +8,145 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EmployeeManagement
 build_property.RootNamespace = EmployeeManagement
-build_property.ProjectDir = C:\Users\PC\Documents\Visual Studio 2015\Projects\6- asp.net Core\Employee Management\MVCAPP\
+build_property.ProjectDir = E:\Projects\6- asp.net Core\Employee Management - Copy\MVCAPP\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\PC\Documents\Visual Studio 2015\Projects\6- asp.net Core\Employee Management\MVCAPP
+build_property.MSBuildProjectDirectory = E:\Projects\6- asp.net Core\Employee Management - Copy\MVCAPP
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Account/AccessDenied.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Account/AccountLocked.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Account/AccountLocked.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2NvdW50TG9ja2VkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Account/ChangePassword.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Account/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Account/ChangePasswordConfirmation.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Account/ChangePasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Account/ConfirmEmail.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Account/ForgetPassword.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Account/ForgetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Account/ForgetPasswordConfirmation.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Account/ForgetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3JnZXRQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Account/Login.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Account/Register.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Account/RegisterationResult.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Account/RegisterationResult.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlcmF0aW9uUmVzdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Account/ResetPassword.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Account/ResetPasswordConfirmation.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Administration/CreateRole.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Administration/CreateRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cQ3JlYXRlUm9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Administration/EditRole.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Administration/EditRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFJvbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Administration/EditUser.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Administration/EditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Administration/EditUsersInRole.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Administration/EditUsersInRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFVzZXJzSW5Sb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Administration/ListRoles.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Administration/ListRoles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTGlzdFJvbGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Administration/ListUsers.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Administration/ListUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTGlzdFVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Administration/ManageUserCliam.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Administration/ManageUserCliam.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTWFuYWdlVXNlckNsaWFtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Administration/ManageUserRole.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Administration/ManageUserRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTWFuYWdlVXNlclJvbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Home/Create.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Home/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Home/Details.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Home/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Home/EmployeeNotFound.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Home/EmployeeNotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3llZU5vdEZvdW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Home/Index.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Home/Privacy.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Home/Update.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Home/RepeatedEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXBlYXRlZEVtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Home/Summary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdW1tYXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Home/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Shared/Error.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Shared/NotFound.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Shared/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/_ViewImports.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/_ViewStart.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Documents/Visual Studio 2015/Projects/6- asp.net Core/Employee Management/MVCAPP/Views/Shared/_Layout.cshtml]
+[E:/Projects/6- asp.net Core/Employee Management - Copy/MVCAPP/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-zfw5uihhvp

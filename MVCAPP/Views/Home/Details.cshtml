@@ -14,11 +14,18 @@
         </div>
         <img src="@imgPath" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">@Model.Id</h5>
-            <h3 class="card-title">@Model.Email</h3>
+            <h5 class="card-title">@Model.Email</h5>
+            <ul class="card-text">
+                <li>Department : @Model.Department</li>
+                <li>Phone : @Model.Phone</li>
+                <li>Address : @Model.Address</li>
+                <li>Salary : @Model.Salary $</li>
+            </ul>
             <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Back</a>
             <a asp-controller="Home" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
-            <a asp-controller="Home" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+            <a asp-controller="Home" asp-action="Delete" asp-route-id="@Model.Id" 
+                onclick="return confirm('Are you sure you want to delete this employee?')"
+                class="btn btn-danger">Delete</a>
 
         </div>
     </div>

@@ -4,6 +4,7 @@ using MVCAPP.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVCAPP.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230228221830_Seeding Manager data and his admin Role in AppliacationUser")]
+    partial class SeedingManagerdataandhisadminRoleinAppliacationUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,15 +99,15 @@ namespace MVCAPP.Migrations
                             Id = "02174cf0–9412–4cfe-afbf-59f706d72cf6",
                             AccessFailedCount = 0,
                             City = "Cairo",
-                            ConcurrencyStamp = "b2be6680-e73f-4095-8b13-f82483c2d379",
+                            ConcurrencyStamp = "51dbcbce-25c1-47d4-8658-d10dfb2d803f",
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = true,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEDfP05cDHzXDcxZgUJa9Iio+W2GhHl8WRa5h2zf85G8bv6XvXJORC9APuOgg7xSn/A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEOycaKOc9+sKFWbV7Pfc0v9acxO9ZhqPI1dABoyjKy4R9v4SPIY0i654P0CCEHj0tQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "93f8d2a3-0392-4395-bee1-5a50cea9427c",
+                            SecurityStamp = "3baf7316-bd31-4a0a-9d85-354578eaf766",
                             TwoFactorEnabled = false,
                             UserName = "admin@gmail.com"
                         });
@@ -325,29 +328,6 @@ namespace MVCAPP.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("AspNetUserClaims", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            ClaimType = "Create Role",
-                            ClaimValue = "true",
-                            UserId = "02174cf0–9412–4cfe-afbf-59f706d72cf6"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            ClaimType = "Edit Role",
-                            ClaimValue = "true",
-                            UserId = "02174cf0–9412–4cfe-afbf-59f706d72cf6"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            ClaimType = "Delete Role",
-                            ClaimValue = "true",
-                            UserId = "02174cf0–9412–4cfe-afbf-59f706d72cf6"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>

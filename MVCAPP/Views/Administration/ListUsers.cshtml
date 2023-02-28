@@ -4,7 +4,7 @@
     ViewData["Title"] = "List All Users";
 }
 
-<h3>List All Users</h3>
+<h3 class="display-4">List All Users</h3>
 
 @if (Model.Any())
 {
@@ -26,12 +26,12 @@
                     @if (user.UserName != User.Identity.Name)
                     {
                         <span id="DeleteSpan_@user.Id">
-                            <a onclick="confirmDelete('@user.Id',true)" href="#" class="btn btn-danger">Delete</a>
+                            <a onclick="confirmDelete('@user.Id',true)"  class="btn btn-danger">Delete</a>
                         </span>
                         <span id="ConfirmDeleteSpan_@user.Id" style="display:none">
                             <span>Are you sure you want to delete user ? </span>
                             <button type="submit" class="btn btn-danger">Yes</button>
-                            <a onclick="confirmDelete('@user.Id',false)" href="#" class="btn btn-primary">No</a>
+                            <a onclick="confirmDelete('@user.Id',false)" class="btn btn-primary">No</a>
                         </span>
                     }
   

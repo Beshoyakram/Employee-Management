@@ -25,7 +25,23 @@
             </select>
             <span asp-validation-for="Department" class="text-danger"></span>
         </div>
-    
+        <div class="mb-3">
+            <label asp-for="Phone" class="form-label"></label>
+            <input asp-for="Phone" class="form-control" id="Email">
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Address" class="form-label"></label>
+            <input asp-for="Address" class="form-control" id="Email">
+            <span asp-validation-for="Address" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Salary" class="form-label"></label>
+            <input asp-for="Salary" class="form-control" id="Email">
+            <span asp-validation-for="Salary" class="text-danger"></span>
+
+        </div>
         <div class="mb-3 form-check">
             <label asp-for="Photo" class="form-label"></label>
             <input asp-for="Photo" class="form-control" id="Photo" accept="image/png, image/jpg" />

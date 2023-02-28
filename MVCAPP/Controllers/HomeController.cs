@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using EmployeeManagement.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MVCAPP.Models;
 using MVCAPP.ViewModels;
@@ -11,27 +12,36 @@ namespace MVCAPP.Controllers
     [Authorize]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly IEmployeeRepository _employeeRepository;
         private readonly IHostingEnvironment _hostingEnvironment;
 
-        public HomeController(ILogger<HomeController> logger, IEmployeeRepository employeeRepository
+        public HomeController( IEmployeeRepository employeeRepository
             ,IHostingEnvironment hostingEnvironment)
         {
-            _logger = logger;
             _employeeRepository = employeeRepository;
             _hostingEnvironment = hostingEnvironment;
         }
 
 
-        [AllowAnonymous]/*to allow access index page without authotization*/
+        [Authorize]
+        [HttpGet]
         public IActionResult Index()
         {
-            var model = _employeeRepository.AllEmployee();
+            IEnumerable<Employee> emps = _employeeRepository.AllEmployee();
+
+            IndexViewModel model = new IndexViewModel { Employees = emps, SerachTerm = "" };
+            return View(model);
+        }
+        [Authorize]
+        [HttpPost]
+        public IActionResult Index(IndexViewModel model)
+        {
+            var Employees = _employeeRepository.Search(model.SerachTerm);
+            model.Employees = Employees;
             return View(model);
         }
 
-        [AllowAnonymous]
+        [Authorize]
         public IActionResult Details(int id)
         {
             Employee employee = _employeeRepository.GetEmployee(id);
@@ -44,35 +54,49 @@ namespace MVCAPP.Controllers
         }
         
         [HttpGet]
+        [Authorize(Policy = "CreateRolePolicy")]
         public IActionResult Create()
         {
             return View();
         }
         [HttpPost]
+        [Authorize(Policy = "CreateRolePolicy")]
         public IActionResult Create(CreateViewModel model)
         {
             //check validations
             if (ModelState.IsValid)
             {
                 string uniqueFileName = ProcessUploadedFile(model);
-
-
-                Employee employee = new Employee()
+                var found = _employeeRepository.FindEmployee(model.Email);
+                if (found == false)
                 {
+                    Employee employee = new Employee()
+                    {
 
-                    Name = model.Name,
-                    Email = model.Email,
-                    Department = model.Department,
-                    PhotoPath = uniqueFileName
-                };
-                
-                Employee e= _employeeRepository.AddEmployee(employee);
-                return RedirectToAction("Details", new { id = e.Id });
+                        Name = model.Name,
+                        Email = model.Email,
+                        Department = model.Department,
+                        PhotoPath = uniqueFileName,
+                        Address = model.Address,
+                        Phone = model.Phone,
+                        Salary = model.Salary
+                    };
+
+                    Employee e = _employeeRepository.AddEmployee(employee);
+                    return RedirectToAction("Details", new { id = e.Id });
+                }
+                else 
+                {
+                    ViewBag.ErrorMessage = $"The user with Email : {model.Email} is already exist.";
+                    return View("RepeatedEmployee");
+                }
+  
             }
             return View();
         }
 
         [HttpGet]
+        [Authorize(Policy = "EditRolePolicy")]
         public IActionResult Update(int id) 
         {
             Employee employee = _employeeRepository.GetEmployee(id);
@@ -82,11 +106,15 @@ namespace MVCAPP.Controllers
                 Name = employee.Name,
                 Email = employee.Email,
                 Department = employee.Department,
-                ExistingPhotoPath = employee.PhotoPath
+                ExistingPhotoPath = employee.PhotoPath,
+                Phone=employee.Phone,
+                Address =employee.Address,
+                Salary = employee.Salary
             };
             return View(model);
         }
         [HttpPost]
+        [Authorize(Policy = "EditRolePolicy")]
         public IActionResult Update(UpdateViewModel model)
         {
             //check validations
@@ -98,6 +126,9 @@ namespace MVCAPP.Controllers
                 employee.Name = model.Name;
                 employee.Email = model.Email;
                 employee.Department = model.Department;
+                employee.Phone = model.Phone;
+                employee.Address = model.Address;
+                employee.Salary = model.Salary;
                 if (model.Photo != null)
                 {
                     if (model.ExistingPhotoPath != null)
@@ -115,6 +146,8 @@ namespace MVCAPP.Controllers
             }
             return View(model);
         }
+        
+        [Authorize(Policy = "DeleteRolePolicy")]
         public IActionResult Delete(int id)
         {
             Employee emp= _employeeRepository.GetEmployee(id);
@@ -133,8 +166,20 @@ namespace MVCAPP.Controllers
             return View();
         }
 
+        public IActionResult Summary() 
+        {
+            var SummaryData = new Dictionary<string, int>(); 
+            
+            foreach (var item in Enum.GetValues(typeof(Dept)))
+            {
+                var count = _employeeRepository.CountDept((Dept)item);
+                SummaryData.Add(item.ToString(), count);
+            }
+            ViewBag.Summary = SummaryData;
+            return View();
+        }
 
-
+        //For Getting photo path
         private string ProcessUploadedFile(CreateViewModel model)
         {
             string uniqueFileName = null;
