@@ -32,9 +32,9 @@ namespace MVCAPP.Migrations
                 values: new object[,]
                 {
                     { 3, 1, "Mona@gmail.com", "Mona", "Female1.png" },
-                    { 4, 1, "Rmay@gmail.com", "Rmay", "Male1.png" },
+                    { 4, 1, "Rmay@gmail.com", "Rmay", "Male2.png" },
                     { 5, 1, "Rmay2@gmail.com", "Rmay2", "Male2.png" },
-                    { 6, 1, "Rmay3@gmail.com", "Rmay3", "Male1.png" },
+                    { 6, 1, "Rmay3@gmail.com", "Rmay3", "Male2.png" },
                     { 7, 1, "Rmay4@gmail.com", "Rmay4", "Male2.png" },
                     { 8, 1, "Reem@gmail.com", "Reem", "Female1.png" }
                 });

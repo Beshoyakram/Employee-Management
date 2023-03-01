@@ -24,7 +24,7 @@ namespace MVCAPP.Models
                     Name = "Ahmed said",
                     Email = "Ahmed_said@gmail.com",
                     Department = Dept.IT,
-                    PhotoPath = "Male1.png",
+                    PhotoPath = "Male2.png",
                     Phone = 01255412344,
                     Salary = 3150.00,
                     Address = "cairo"
@@ -54,7 +54,7 @@ namespace MVCAPP.Models
                     Name = "Ramy ayman",
                     Email = "Ramy140@gmail.com",
                     Department = Dept.IT,
-                    PhotoPath = "Male1.png",
+                    PhotoPath = "Male2.png",
                     Phone = 01024785475,
                     Salary = 3150.00,
                     Address = "cairo"
@@ -75,7 +75,7 @@ namespace MVCAPP.Models
                     Name = "sayed ali",
                     Email = "sayed_ali@gmail.com",
                     Department = Dept.IT,
-                    PhotoPath = "Male1.png",
+                    PhotoPath = "Male2.png",
                     Phone = 01527848784,
                     Salary = 3150.00,
                     Address = "cairo"
