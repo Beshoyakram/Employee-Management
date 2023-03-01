@@ -10,8 +10,8 @@
 
 ### Screenshot
 
-![](./Screenshot1.png)
-![](./Screenshot2.png)
+![](./Screenshot1.PNG)
+![](./Screenshot2.PNG)
 
 
 ### Built with
