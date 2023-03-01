@@ -6,6 +6,7 @@
 - [Links](#links)
 - [Built with](#built-with)
 - [Features](#features)
+- [Using](#using)
 - [Author](#author)
 
 ### Screenshot
@@ -33,6 +34,10 @@
 - Email lockout when fail to login 5 times for 15 min.
 - Entity framework core migrations.
 
+### Using
+
+- The Admin mail is : Admin@gmail.com
+- The Password is : @Admin123 
 
 ## Author
 
