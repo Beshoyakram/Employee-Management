@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4tiJXnZNWdMpcyeWtGWpvz9kgjvkNEGyyCy25kZbhxhh12+mr1SYmn3JX8g/8DzxpZO3SbFyI0zxN38OqMz0MA==",
+  "dgSpecHash": "/WH52nqgaMLNREYHSLVCVlz+mEyuwHzTVdbG3Ob6A2WxSPdjyt5H/zMbaEhR7ljXf1gbxp7T4Ba7WG198+wNaA==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\6- asp.net Core\\Employee Management - Copy\\MVCAPP\\EmployeeManagement.csproj",
+  "projectFilePath": "E:\\Employee-Management\\MVCAPP\\EmployeeManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

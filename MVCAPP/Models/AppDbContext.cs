@@ -21,84 +21,84 @@ namespace MVCAPP.Models
                 new Employee
                 {
                     Id = 1,
-                    Name = "remon",
-                    Email = "remon@gmail.com",
+                    Name = "Ahmed said",
+                    Email = "Ahmed_said@gmail.com",
                     Department = Dept.IT,
                     PhotoPath = "Male1.png",
-                    Phone = 01212222228,
+                    Phone = 01255412344,
                     Salary = 3150.00,
                     Address = "cairo"
                 }, new Employee
                 {
                     Id = 2,
-                    Name = "Beshoy",
-                    Email = "Beshoy@gmail.com",
+                    Name = "Karam ahmed",
+                    Email = "karam@gmail.com",
                     Department = Dept.IT,
                     PhotoPath = "Male2.png",
-                    Phone = 01212222228,
+                    Phone = 01054782510,
                     Salary = 3150.00,
                     Address = "cairo"
                 }, new Employee
                 {
                     Id = 3,
-                    Name = "Mona",
-                    Email = "Mona@gmail.com",
+                    Name = "Mona sayed",
+                    Email = "Monasayed@gmail.com",
                     Department = Dept.IT,
                     PhotoPath = "Female1.png",
-                    Phone = 01212222228,
+                    Phone = 01521422167,
                     Salary = 3150.00,
                     Address = "cairo"
                 }, new Employee
                 {
                     Id = 4,
-                    Name = "Rmay",
-                    Email = "Rmay@gmail.com",
+                    Name = "Ramy ayman",
+                    Email = "Ramy140@gmail.com",
                     Department = Dept.IT,
                     PhotoPath = "Male1.png",
-                    Phone = 01212222228,
+                    Phone = 01024785475,
                     Salary = 3150.00,
                     Address = "cairo"
                 }, new Employee
                 {
                     Id = 5,
-                    Name = "Rmay2",
-                    Email = "Rmay2@gmail.com",
+                    Name = "Foaud",
+                    Email = "Foaud22@gmail.com",
                     Department = Dept.IT,
                     PhotoPath = "Male2.png",
-                    Phone = 01212222228,
+                    Phone = 01223475496,
                     Salary = 3150.00,
                     Address = "cairo"
 
                 }, new Employee
                 {
                     Id = 6,
-                    Name = "Rmay3",
-                    Email = "Rmay3@gmail.com",
+                    Name = "sayed ali",
+                    Email = "sayed_ali@gmail.com",
                     Department = Dept.IT,
                     PhotoPath = "Male1.png",
-                    Phone = 01212222228,
+                    Phone = 01527848784,
                     Salary = 3150.00,
                     Address = "cairo"
                 },
                 new Employee
                 {
                     Id = 7,
-                    Name = "Rmay4",
-                    Email = "Rmay4@gmail.com",
+                    Name = "Samir",
+                    Email = "Samir15@gmail.com",
                     Department = Dept.IT,
                     PhotoPath = "Male2.png",
-                    Phone = 01212222228,
+                    Phone = 01112323579,
                     Salary = 3150.00,
                     Address = "cairo"
                 },
                 new Employee
                 {
                     Id = 8,
-                    Name = "Reem",
-                    Email = "Reem@gmail.com",
+                    Name = "Reem ali",
+                    Email = "Reem_ali@gmail.com",
                     Department = Dept.IT,
                     PhotoPath = "Female1.png",
-                    Phone = 01212222228,
+                    Phone = 01001245785,
                     Salary = 3150.00,
                     Address = "cairo"
                 }

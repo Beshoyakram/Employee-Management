@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\6- asp.net Core\\Employee Management - Copy\\MVCAPP\\EmployeeManagement.csproj": {}
+    "E:\\Employee-Management\\MVCAPP\\EmployeeManagement.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\6- asp.net Core\\Employee Management - Copy\\MVCAPP\\EmployeeManagement.csproj": {
+    "E:\\Employee-Management\\MVCAPP\\EmployeeManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\6- asp.net Core\\Employee Management - Copy\\MVCAPP\\EmployeeManagement.csproj",
+        "projectUniqueName": "E:\\Employee-Management\\MVCAPP\\EmployeeManagement.csproj",
         "projectName": "EmployeeManagement",
-        "projectPath": "E:\\Projects\\6- asp.net Core\\Employee Management - Copy\\MVCAPP\\EmployeeManagement.csproj",
+        "projectPath": "E:\\Employee-Management\\MVCAPP\\EmployeeManagement.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\6- asp.net Core\\Employee Management - Copy\\MVCAPP\\obj\\",
+        "outputPath": "E:\\Employee-Management\\MVCAPP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

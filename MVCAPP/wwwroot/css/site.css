@@ -27,12 +27,14 @@ body{
 body {
   margin-bottom: 60px;
 }
+
 /*Navbar*/
 .navbar {
     background-color: #875A7B
 }
 .navbar li a {font-size: 17px;}
 .navbar a i {color: #ccc}
+
 
 /*SearchForm in index_file*/
 .SearchForm {
